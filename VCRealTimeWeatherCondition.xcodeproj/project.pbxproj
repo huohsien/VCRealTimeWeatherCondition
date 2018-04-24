@@ -12,9 +12,12 @@
 		66A1204920861E0A00B72915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A1204720861E0A00B72915 /* Main.storyboard */; };
 		66A1204B20861E0B00B72915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66A1204A20861E0B00B72915 /* Assets.xcassets */; };
 		66A1204E20861E0B00B72915 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A1204C20861E0B00B72915 /* LaunchScreen.storyboard */; };
+		66A12056208A037C00B72915 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A12055208A037C00B72915 /* Constants.swift */; };
+		A6061E94162496C8A7BC0263 /* Pods_VCRealTimeWeatherCondition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA84B4C39DA1B4333EEF8603 /* Pods_VCRealTimeWeatherCondition.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		050AB954D174A74C416B68CE /* Pods-VCRealTimeWeatherCondition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VCRealTimeWeatherCondition.release.xcconfig"; path = "Pods/Target Support Files/Pods-VCRealTimeWeatherCondition/Pods-VCRealTimeWeatherCondition.release.xcconfig"; sourceTree = "<group>"; };
 		66A1204020861E0A00B72915 /* VCRealTimeWeatherCondition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCRealTimeWeatherCondition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A1204320861E0A00B72915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66A1204520861E0A00B72915 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		66A1204A20861E0B00B72915 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66A1204D20861E0B00B72915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66A1204F20861E0B00B72915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66A12055208A037C00B72915 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BAB0421C1FA5D65A23C5621A /* Pods-VCRealTimeWeatherCondition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VCRealTimeWeatherCondition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VCRealTimeWeatherCondition/Pods-VCRealTimeWeatherCondition.debug.xcconfig"; sourceTree = "<group>"; };
+		FA84B4C39DA1B4333EEF8603 /* Pods_VCRealTimeWeatherCondition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VCRealTimeWeatherCondition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6061E94162496C8A7BC0263 /* Pods_VCRealTimeWeatherCondition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01A90B918E78EA3117653E54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAB0421C1FA5D65A23C5621A /* Pods-VCRealTimeWeatherCondition.debug.xcconfig */,
+				050AB954D174A74C416B68CE /* Pods-VCRealTimeWeatherCondition.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		66A1203720861E0A00B72915 = {
 			isa = PBXGroup;
 			children = (
 				66A1204220861E0A00B72915 /* VCRealTimeWeatherCondition */,
 				66A1204120861E0A00B72915 /* Products */,
+				01A90B918E78EA3117653E54 /* Pods */,
+				7CBCC2427E419F57621EDBBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				66A1204320861E0A00B72915 /* AppDelegate.swift */,
+				66A12055208A037C00B72915 /* Constants.swift */,
 				66A1204520861E0A00B72915 /* ViewController.swift */,
 				66A1204720861E0A00B72915 /* Main.storyboard */,
 				66A1204A20861E0B00B72915 /* Assets.xcassets */,
@@ -64,6 +83,14 @@
 			path = VCRealTimeWeatherCondition;
 			sourceTree = "<group>";
 		};
+		7CBCC2427E419F57621EDBBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA84B4C39DA1B4333EEF8603 /* Pods_VCRealTimeWeatherCondition.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66A1205220861E0B00B72915 /* Build configuration list for PBXNativeTarget "VCRealTimeWeatherCondition" */;
 			buildPhases = (
+				80AB26857F801A521FA144A5 /* [CP] Check Pods Manifest.lock */,
 				66A1203C20861E0A00B72915 /* Sources */,
 				66A1203D20861E0A00B72915 /* Frameworks */,
 				66A1203E20861E0A00B72915 /* Resources */,
+				FBB2FBF4014D1EAA62EB13CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +159,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		80AB26857F801A521FA144A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VCRealTimeWeatherCondition-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBB2FBF4014D1EAA62EB13CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VCRealTimeWeatherCondition/Pods-VCRealTimeWeatherCondition-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VCRealTimeWeatherCondition/Pods-VCRealTimeWeatherCondition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		66A1203C20861E0A00B72915 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +205,7 @@
 			files = (
 				66A1204620861E0A00B72915 /* ViewController.swift in Sources */,
 				66A1204420861E0A00B72915 /* AppDelegate.swift in Sources */,
+				66A12056208A037C00B72915 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -278,6 +347,7 @@
 		};
 		66A1205320861E0B00B72915 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAB0421C1FA5D65A23C5621A /* Pods-VCRealTimeWeatherCondition.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,12 +360,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.VHHC.VCRealTimeWeatherCondition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		66A1205420861E0B00B72915 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 050AB954D174A74C416B68CE /* Pods-VCRealTimeWeatherCondition.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,7 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.VHHC.VCRealTimeWeatherCondition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
