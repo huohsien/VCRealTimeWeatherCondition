@@ -63,13 +63,28 @@ class ViewController: UIViewController, WKNavigationDelegate {
             return
         }
         
+        var html: String!
+        
         do {
             let htmlString = try String(contentsOf: url, encoding: .utf8)
-            print("htmlString=\(htmlString)")
+//            print("htmlString=\(htmlString)")
+            html = htmlString
+        } catch let error {
+            print("Error: \(error)")
+        }
+        
+        do {
+            let doc = try HTML(html: html, encoding: .utf8)
+            print(doc.title)
+            
+            for link in doc.xpath("//a | //link") {
+                print(link.text)
+                print(link["href"])
+            }
+            
         } catch let error {
             print("Error: \(error)")
         }
     }
-    
 }
 
