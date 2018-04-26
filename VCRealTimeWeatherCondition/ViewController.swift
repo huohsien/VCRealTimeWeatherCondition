@@ -20,6 +20,8 @@ class ViewController: UIViewController, WKNavigationDelegate {
     
     var wkWebView: WKWebView!
     
+    var html: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -58,33 +60,36 @@ class ViewController: UIViewController, WKNavigationDelegate {
     
     func currentTemperature() {
         
-        guard let url = URL(string: Constants.baseUrl) else {
-            print("Error: \(Constants.baseUrl) is not a valid URL")
-            return
-        }
+//        guard let url = URL(string: Constants.baseUrl) else {
+//            print("Error: \(Constants.baseUrl) is not a valid URL")
+//            return
+//        }
+//
+//        do {
+//            let htmlString = try String(contentsOf: url, encoding: .utf8)
+//            html = htmlString
+//        } catch let error {
+//            print("Error: \(error)")
+//        }
+
         
-        var html: String!
-        
-        do {
-            let htmlString = try String(contentsOf: url, encoding: .utf8)
-//            print("htmlString=\(htmlString)")
-            html = htmlString
-        } catch let error {
-            print("Error: \(error)")
-        }
-        
-        do {
-            let doc = try HTML(html: html, encoding: .utf8)
-            print(doc.title)
+        wkWebView.evaluateJavaScript("document.documentElement.outerHTML.toString()") { (result, error) in
+            print(result)
+            self.html = result as! String
             
-            for link in doc.xpath("//a | //link") {
-                print(link.text)
-                print(link["href"])
+            if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+                
+                let fileURL = dir.appendingPathComponent("weather.txt")
+                
+                //writing
+                do {
+                    try self.html.write(to: fileURL, atomically: false, encoding: .utf8)
+                }
+                catch {/* error handling here */}
             }
-            
-        } catch let error {
-            print("Error: \(error)")
         }
+        
+        
     }
 }
 
