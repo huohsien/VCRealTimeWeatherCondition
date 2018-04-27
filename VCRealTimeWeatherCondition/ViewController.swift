@@ -51,45 +51,41 @@ class ViewController: UIViewController, WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         loadingPageIndicator.stopAnimating()
         loadingPageIndicator.hidesWhenStopped = true
-        wkWebView.alpha = 1.0
+//        wkWebView.alpha = 1.0
         
-        currentTemperature()
+        fetchAndUpdateData()
     }
     
     //MARK: - html parser
     
-    func currentTemperature() {
-        
-//        guard let url = URL(string: Constants.baseUrl) else {
-//            print("Error: \(Constants.baseUrl) is not a valid URL")
-//            return
-//        }
-//
-//        do {
-//            let htmlString = try String(contentsOf: url, encoding: .utf8)
-//            html = htmlString
-//        } catch let error {
-//            print("Error: \(error)")
-//        }
+    func fetchAndUpdateData() {
 
-        
+        // get the result of the requested page
         wkWebView.evaluateJavaScript("document.documentElement.outerHTML.toString()") { (result, error) in
-            print(result)
+
             self.html = result as! String
             
-            if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+            // parsing
+            do {
+                let doc = try HTML(html: self.html, encoding: .utf8)
+              
+                let temp1 = doc.xpath("//tbody/tr[2]/td[@class='temp1']")
                 
-                let fileURL = dir.appendingPathComponent("weather.txt")
-                
-                //writing
-                do {
-                    try self.html.write(to: fileURL, atomically: false, encoding: .utf8)
+                if let node = temp1.first {
+                    if let tempString: String = node.content {
+                        self.tempLabel.text = tempString
+                    }
                 }
-                catch {/* error handling here */}
-            }
+                
+                let td8 = doc.xpath("//tbody/tr[2]/td[8]")
+                
+                if let node = td8.first {
+                    if let humidityString: String = node.content {
+                        self.relHumidLabel.text = humidityString
+                    }
+                }
+            } catch {/* error handling here */}
         }
-        
-        
     }
 }
 
