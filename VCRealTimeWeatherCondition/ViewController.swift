@@ -76,7 +76,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
                 for tr in doc.xpath("//tbody/tr") {
                     for td in tr.xpath("./td") {
                         guard let locationNameString: String = td.text else {continue}
-                        print(locationNameString)
+//                        print(locationNameString)
                         if locationNameString == "大安森林" {
                             
                             let dateTime = tr.xpath("./td[3]")

@@ -350,6 +350,7 @@
 			baseConfigurationReference = BAB0421C1FA5D65A23C5621A /* Pods-VCRealTimeWeatherCondition.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZWQWGRSN4T;
 				INFOPLIST_FILE = VCRealTimeWeatherCondition/Info.plist;
@@ -369,6 +370,7 @@
 			baseConfigurationReference = 050AB954D174A74C416B68CE /* Pods-VCRealTimeWeatherCondition.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZWQWGRSN4T;
 				INFOPLIST_FILE = VCRealTimeWeatherCondition/Info.plist;
