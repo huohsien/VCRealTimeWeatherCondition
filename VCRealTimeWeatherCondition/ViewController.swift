@@ -18,6 +18,10 @@ class ViewController: UIViewController, WKNavigationDelegate {
     
     @IBOutlet weak var loadingPageIndicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var locationLabel: UILabel!
+    
+    @IBOutlet weak var dateTimeLabel: UILabel!
+    
     var wkWebView: WKWebView!
     
     var html: String!
@@ -69,21 +73,56 @@ class ViewController: UIViewController, WKNavigationDelegate {
             do {
                 let doc = try HTML(html: self.html, encoding: .utf8)
               
-                let temp1 = doc.xpath("//tbody/tr[2]/td[@class='temp1']")
-                
-                if let node = temp1.first {
-                    if let tempString: String = node.content {
-                        self.tempLabel.text = tempString
+                for tr in doc.xpath("//tbody/tr") {
+                    for td in tr.xpath("./td") {
+                        guard let locationNameString: String = td.text else {continue}
+                        print(locationNameString)
+                        if locationNameString == "大安森林" {
+                            
+                            let dateTime = tr.xpath("./td[3]")
+                            
+                            if let node = dateTime.first {
+                                if let dateTimeString: String = node.content {
+                                    self.dateTimeLabel.text = dateTimeString
+                                }
+                            }
+                            
+                            let temp1 = tr.xpath("./td[4]")
+                            
+                            if let node = temp1.first {
+                                if let tempString: String = node.content {
+                                    self.tempLabel.text = tempString
+                                }
+                            }
+                            
+                            let td13 = tr.xpath("./td[13]")
+                            
+                            if let node = td13.first {
+                                if let humidityString: String = node.content {
+                                    self.relHumidLabel.text = humidityString
+                                }
+                            }
+
+                        }
+                        
                     }
                 }
                 
-                let td8 = doc.xpath("//tbody/tr[2]/td[8]")
-                
-                if let node = td8.first {
-                    if let humidityString: String = node.content {
-                        self.relHumidLabel.text = humidityString
-                    }
-                }
+//                let temp1 = doc.xpath("//tbody/tr[2]/td[@class='temp1']")
+//
+//                if let node = temp1.first {
+//                    if let tempString: String = node.content {
+//                        self.tempLabel.text = tempString
+//                    }
+//                }
+//
+//                let td8 = doc.xpath("//tbody/tr[2]/td[8]")
+//
+//                if let node = td8.first {
+//                    if let humidityString: String = node.content {
+//                        self.relHumidLabel.text = humidityString
+//                    }
+//                }
             } catch {/* error handling here */}
         }
     }
