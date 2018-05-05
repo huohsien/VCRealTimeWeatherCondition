@@ -22,6 +22,8 @@ class ViewController: UIViewController, WKNavigationDelegate {
     
     @IBOutlet weak var dateTimeLabel: UILabel!
     
+    @IBOutlet weak var locationNameLabel: UILabel!
+    
     var wkWebView: WKWebView!
     
     var html: String!
@@ -77,16 +79,24 @@ class ViewController: UIViewController, WKNavigationDelegate {
                     for td in tr.xpath("./td") {
                         guard let locationNameString: String = td.text else {continue}
 //                        print(locationNameString)
-                        if locationNameString == "大安森林" {
+                        if locationNameString == "臺灣大學" || locationNameString == "大安森林" {
+                            
                             
                             let dateTime = tr.xpath("./td[3]")
                             
                             if let node = dateTime.first {
                                 if let dateTimeString: String = node.content {
+
+                                    if dateTimeString == "儀器故障" {
+                                        continue
+                                        
+                                    }
                                     self.dateTimeLabel.text = dateTimeString
                                 }
                             }
                             
+                            self.locationLabel.text = locationNameString
+
                             let temp1 = tr.xpath("./td[4]")
                             
                             if let node = temp1.first {

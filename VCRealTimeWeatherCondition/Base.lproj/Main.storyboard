@@ -24,8 +24,8 @@
                                 <color key="textColor" red="0.0001922522367" green="0.81153736480000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大安森林公園" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amA-Ht-7de">
-                                <rect key="frame" x="50" y="120" width="276" height="54"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----------" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amA-Ht-7de">
+                                <rect key="frame" x="49" y="120" width="277" height="54"/>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="46"/>
                                 <color key="textColor" red="0.0001922522367" green="0.81153736480000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -52,7 +52,7 @@
                                 <color key="textColor" red="0.0001922522367" green="0.81153736480000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05/02 06:50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwP-Mq-Sgn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--/-- --:--" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwP-Mq-Sgn">
                                 <rect key="frame" x="72" y="211" width="232" height="41"/>
                                 <fontDescription key="fontDescription" name="Menlo-Italic" family="Menlo" pointSize="35"/>
                                 <color key="textColor" red="0.0001922522367" green="0.81153736480000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -82,6 +82,7 @@
                         <outlet property="dateTimeLabel" destination="pwP-Mq-Sgn" id="oMB-VU-hk8"/>
                         <outlet property="loadingPageIndicator" destination="FFk-1j-h7g" id="9ms-yd-pLR"/>
                         <outlet property="locationLabel" destination="amA-Ht-7de" id="iUm-wm-alA"/>
+                        <outlet property="locationNameLabel" destination="amA-Ht-7de" id="LQ3-og-8ff"/>
                         <outlet property="relHumidLabel" destination="ncC-FU-N9d" id="ayK-vB-dDX"/>
                         <outlet property="tempLabel" destination="DBe-Xa-CZ6" id="rbY-m2-rdu"/>
                     </connections>
