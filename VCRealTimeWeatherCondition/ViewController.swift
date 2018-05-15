@@ -87,32 +87,31 @@ class ViewController: UIViewController, WKNavigationDelegate {
                             if let node = dateTime.first {
                                 if let dateTimeString: String = node.content {
 
-                                    if dateTimeString == "儀器故障" {
+                                    if dateTimeString.contains("儀器")  {
                                         continue
-                                        
                                     }
                                     self.dateTimeLabel.text = dateTimeString
+                                    
+                                    self.locationLabel.text = locationNameString
+                                    
+                                    let temp1 = tr.xpath("./td[4]")
+                                    
+                                    if let node = temp1.first {
+                                        if let tempString: String = node.content {
+                                            self.tempLabel.text = tempString
+                                        }
+                                    }
+                                    
+                                    let td13 = tr.xpath("./td[13]")
+                                    
+                                    if let node = td13.first {
+                                        if let humidityString: String = node.content {
+                                            self.relHumidLabel.text = humidityString
+                                        }
+                                    }
+                                    return
                                 }
                             }
-                            
-                            self.locationLabel.text = locationNameString
-
-                            let temp1 = tr.xpath("./td[4]")
-                            
-                            if let node = temp1.first {
-                                if let tempString: String = node.content {
-                                    self.tempLabel.text = tempString
-                                }
-                            }
-                            
-                            let td13 = tr.xpath("./td[13]")
-                            
-                            if let node = td13.first {
-                                if let humidityString: String = node.content {
-                                    self.relHumidLabel.text = humidityString
-                                }
-                            }
-
                         }
                         
                     }
