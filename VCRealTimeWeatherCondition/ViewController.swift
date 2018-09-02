@@ -57,6 +57,9 @@ class ViewController: UIViewController, WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         loadingPageIndicator.stopAnimating()
         loadingPageIndicator.hidesWhenStopped = true
+        
+        
+        // SHOW THE WEBPAGE FOR DEBUG OR NOT
 //        wkWebView.alpha = 1.0
         
         fetchAndUpdateData()
@@ -81,24 +84,23 @@ class ViewController: UIViewController, WKNavigationDelegate {
 //                        print(locationNameString)
                         if locationNameString == "臺灣大學" || locationNameString == "大安森林" {
                             
-                            
                             let dateTime = tr.xpath("./td[3]")
-                            
                             if let node = dateTime.first {
                                 if let dateTimeString: String = node.content {
 
-                                    if dateTimeString.contains("儀器")  {
+                                    if dateTimeString.contains("儀器") || dateTimeString.contains("-")  {
                                         continue
                                     }
-                                    self.dateTimeLabel.text = dateTimeString
                                     
-                                    self.locationLabel.text = locationNameString
+                                    let temperature = tr.xpath("./td[4]")
                                     
-                                    let temp1 = tr.xpath("./td[4]")
-                                    
-                                    if let node = temp1.first {
-                                        if let tempString: String = node.content {
-                                            self.tempLabel.text = tempString
+                                    if let node = temperature.first {
+                                        if let temperatureString: String = node.content {
+
+                                            if temperatureString.contains("儀器") || temperatureString.contains("-")  {
+                                                continue
+                                            }
+                                            self.tempLabel.text = temperatureString
                                         }
                                     }
                                     
@@ -106,9 +108,17 @@ class ViewController: UIViewController, WKNavigationDelegate {
                                     
                                     if let node = td13.first {
                                         if let humidityString: String = node.content {
+                                            
+                                            if humidityString.contains("儀器") || humidityString.contains("-")  {
+                                                continue
+                                            }
                                             self.relHumidLabel.text = humidityString
                                         }
                                     }
+                                    
+                                    self.dateTimeLabel.text = dateTimeString
+                                    self.locationLabel.text = locationNameString
+                                    
                                     return
                                 }
                             }
