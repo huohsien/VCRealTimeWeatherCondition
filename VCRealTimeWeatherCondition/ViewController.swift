@@ -185,7 +185,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
             // parsing
             do {
                 let doc = try HTML(html: self.html, encoding: .utf8)
-                for data in doc.xpath("//*[@id=\"tableData\"]//*[.=\"臺灣大學 (A0A01)\"]/../../td[3]") {
+                for data in doc.xpath("//*[@id=\"tableData\"]//*[.=\"臺灣大學 (A0A01)\"]/../../td[4]") {
                     guard let rainfallString: String = data.text else {continue}
                         print(rainfallString)
                     if rainfallString == "-" {
@@ -194,7 +194,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
                         
                         // if the data mearured at NTU site is not available, try to get the data at Daan forest Park
                         //
-                        for data in doc.xpath("//*[@id=\"tableData\"]//*[.=\"大安森林 (CAAH6)\"]/../../td[3]") {
+                        for data in doc.xpath("//*[@id=\"tableData\"]//*[.=\"大安森林 (CAAH6)\"]/../../td[4]") {
                             guard let rainfallString: String = data.text else {continue}
 //                            print(rainfallString)
                             if rainfallString == "-" {
