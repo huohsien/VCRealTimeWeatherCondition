@@ -108,15 +108,19 @@ class ViewController: UIViewController, WKNavigationDelegate {
                     let doc = try HTML(html: self.html, encoding: .utf8)
                     
                     let trs = doc.xpath("//tbody/tr")
+//                    let trs = doc.xpath("/html/body//main/div/div[1]").first?.text
+
+                    
                     if trs.count == 0 {
                         print("ERROR: page failed to be loaded completely")
+                        self.parseHtml()
                     }
                     for tr in trs {
                         let th = tr.xpath("./th")
                         
                         guard let locationNameString: String = th.first?.text else {continue}
                         print(locationNameString)
-                        if locationNameString != "臺灣大學" && locationNameString != "大安森林" {
+                        if locationNameString != "臺灣大學" && locationNameString != "大安森林" && locationNameString != "信義" {
                             continue
                         }
 
