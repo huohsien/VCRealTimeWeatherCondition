@@ -64,17 +64,17 @@ class ViewController: UIViewController, WKNavigationDelegate {
         
         // for getting rainfall
         //
-        wkWebView2 = WKWebView(frame: CGRect(x: 0.0, y: view.bounds.size.height * (1.0 - webViewRatio), width: view.bounds.size.width, height: view.bounds.size.height * webViewRatio))
-        wkWebView2.navigationDelegate = self
-        wkWebView2.alpha = 0.0
-        self.view.addSubview(wkWebView2)
-        guard let url2 = URL(string: Constants.baseUrl2) else {
-            print("failed to create url")
-            return
-        }
-        let urlRequest2 = URLRequest(url: url2)
-        wkWebView2.load(urlRequest2)
-        loadingPageIndicator.startAnimating()
+//        wkWebView2 = WKWebView(frame: CGRect(x: 0.0, y: view.bounds.size.height * (1.0 - webViewRatio), width: view.bounds.size.width, height: view.bounds.size.height * webViewRatio))
+//        wkWebView2.navigationDelegate = self
+//        wkWebView2.alpha = 0.0
+//        self.view.addSubview(wkWebView2)
+//        guard let url2 = URL(string: Constants.baseUrl2) else {
+//            print("failed to create url")
+//            return
+//        }
+//        let urlRequest2 = URLRequest(url: url2)
+//        wkWebView2.load(urlRequest2)
+//        loadingPageIndicator.startAnimating()
     }
     
     //MARK: - webkit callbacks
@@ -83,14 +83,76 @@ class ViewController: UIViewController, WKNavigationDelegate {
         
         if webView == wkWebView {
             print("callback didFinish from wkWebView")
-            fetchAndUpdateData()
+//            fetchAndUpdateData()
+            parseHtml()
+            
         } else if webView == wkWebView2 {
             print("callback didFinish from wkWebView2")
-            fetchAndUpdateData2()
+//            fetchAndUpdateData2()
         }
     }
     
     //MARK: - html parser
+    func parseHtml() {
+        DispatchQueue.main.async {
+            self.wkWebView.evaluateJavaScript("document.documentElement.outerHTML.toString()") { (result, error) in
+                if error != nil {
+                    print("error: #1")
+                    return
+                }
+                self.html = result as? String
+                print("html length:\(self.html.count)")
+
+                // parsing
+                do {
+                    let doc = try HTML(html: self.html, encoding: .utf8)
+                    
+                    let trs = doc.xpath("//tbody/tr")
+                    if trs.count == 0 {
+                        print("ERROR: page failed to be loaded completely")
+                    }
+                    for tr in trs {
+                        let th = tr.xpath("./th")
+                        
+                        guard let locationNameString: String = th.first?.text else {continue}
+                        print(locationNameString)
+                        if locationNameString != "臺灣大學" && locationNameString != "大安森林" {
+                            continue
+                        }
+
+                        var dateTime = tr.xpath("./td[1]/span").first
+                        if dateTime == nil {
+                            dateTime = tr.xpath("./td[1]").first
+                        }
+
+                        if let dateTimeString: String = dateTime?.content {
+
+                            if dateTimeString.contains("儀器") || dateTimeString.contains("-")  {
+                                continue
+                            }
+                            
+                            self.tempLabel.text = tr.xpath("./td[2]").first?.content
+                            self.relHumidLabel.text = tr.xpath("./td[8]").first?.content
+                            
+                            self.dateTimeLabel.text = dateTimeString
+                            self.locationLabel.text = locationNameString
+                            self.isTempHumidDataRetrieved = true
+                            
+                            self.loadingPageIndicator.stopAnimating()
+                            self.loadingPageIndicator.hidesWhenStopped = true
+                            return
+                        }
+                        
+                    }
+                    
+                } catch let error {
+                    print("Error:\(error.localizedDescription)")
+                }
+                
+            }
+                
+        }
+    }
     
     func fetchAndUpdateData() {
 
@@ -156,22 +218,10 @@ class ViewController: UIViewController, WKNavigationDelegate {
                     }
                 }
                 
-//                let temp1 = doc.xpath("//tbody/tr[2]/td[@class='temp1']")
-//
-//                if let node = temp1.first {
-//                    if let tempString: String = node.content {
-//                        self.tempLabel.text = tempString
-//                    }
-//                }
-//
-//                let td8 = doc.xpath("//tbody/tr[2]/td[8]")
-//
-//                if let node = td8.first {
-//                    if let humidityString: String = node.content {
-//                        self.relHumidLabel.text = humidityString
-//                    }
-//                }
-            } catch {/* error handling here */}
+
+            } catch let error {
+                print("Error:\(error.localizedDescription)")
+            }
         }
     }
     
