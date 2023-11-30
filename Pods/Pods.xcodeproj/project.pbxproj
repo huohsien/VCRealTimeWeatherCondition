@@ -13,6 +13,11 @@
 		5068CB30342CE1B889BC8919C369FDFC /* Kanna.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A9CF8F19D64AE3FFF5B8A654B53E094 /* Kanna.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5AD29370BEE15404C4109062045408BD /* Pods-VCRealTimeWeatherCondition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5CB8CAEE9536B5CF89DBD1D9C215AE0 /* Pods-VCRealTimeWeatherCondition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5EFF980ECF83838DBC0B9D6D06ED0F22 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8939C1A60CBF17F148A2652D63A5BC /* Deprecated.swift */; };
+		66470AF52626D80B009D541A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66470AF42626D80B009D541A /* WidgetKit.framework */; };
+		66470AF72626D80B009D541A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66470AF62626D80B009D541A /* SwiftUI.framework */; };
+		66470AFA2626D80B009D541A /* My_Weather_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66470AF92626D80B009D541A /* My_Weather_Widget.swift */; };
+		66470AFD2626D80D009D541A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66470AFC2626D80D009D541A /* Assets.xcassets */; };
+		66470AFF2626D80D009D541A /* My_Weather_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 66470AFB2626D80B009D541A /* My_Weather_Widget.intentdefinition */; };
 		7A591A657500E4870B465A9A162A9C09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		7E43581A570B0BFBEB695C0A1BD53D03 /* Kanna-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF7D01122C5331D6D5934242A7B6C27 /* Kanna-dummy.m */; };
 		8D75E8BED10A4230F8A7D241CFFCCC0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -42,6 +47,13 @@
 		5025EF01E98C0A1F8E478186E3166C1F /* Pods-VCRealTimeWeatherCondition-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VCRealTimeWeatherCondition-frameworks.sh"; sourceTree = "<group>"; };
 		505AB5A5A1991EE5284E58EB038C98B0 /* Kanna.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Kanna.modulemap; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		66470AF32626D80B009D541A /* My-Weather-WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "My-Weather-WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66470AF42626D80B009D541A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		66470AF62626D80B009D541A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		66470AF92626D80B009D541A /* My_Weather_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Weather_Widget.swift; sourceTree = "<group>"; };
+		66470AFB2626D80B009D541A /* My_Weather_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = My_Weather_Widget.intentdefinition; sourceTree = "<group>"; };
+		66470AFC2626D80D009D541A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66470AFE2626D80D009D541A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6716BF00DB67D49B9209A83718ED87E9 /* Pods-VCRealTimeWeatherCondition-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VCRealTimeWeatherCondition-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7A9CF8F19D64AE3FFF5B8A654B53E094 /* Kanna.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kanna.h; path = Sources/Kanna/Kanna.h; sourceTree = "<group>"; };
 		885F099609EF40D1A8F8D3FB2D2985B0 /* Pods_VCRealTimeWeatherCondition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VCRealTimeWeatherCondition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +91,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		66470AF02626D80B009D541A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66470AF72626D80B009D541A /* SwiftUI.framework in Frameworks */,
+				66470AF52626D80B009D541A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -112,10 +133,22 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		66470AF82626D80B009D541A /* My-Weather-Widget */ = {
+			isa = PBXGroup;
+			children = (
+				66470AF92626D80B009D541A /* My_Weather_Widget.swift */,
+				66470AFB2626D80B009D541A /* My_Weather_Widget.intentdefinition */,
+				66470AFC2626D80D009D541A /* Assets.xcassets */,
+				66470AFE2626D80D009D541A /* Info.plist */,
+			);
+			path = "My-Weather-Widget";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				66470AF82626D80B009D541A /* My-Weather-Widget */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				3B6964DA2105390D1E4DA1A1C475EFE7 /* Pods */,
 				E1FDD37DF752A9F9F287F0F94A8D567F /* Products */,
@@ -142,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				66470AF42626D80B009D541A /* WidgetKit.framework */,
+				66470AF62626D80B009D541A /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,6 +212,7 @@
 			children = (
 				2B6CD96D3103B12D1C612B137EE7D97A /* Kanna.framework */,
 				885F099609EF40D1A8F8D3FB2D2985B0 /* Pods_VCRealTimeWeatherCondition.framework */,
+				66470AF32626D80B009D541A /* My-Weather-WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -221,6 +257,23 @@
 			productReference = 2B6CD96D3103B12D1C612B137EE7D97A /* Kanna.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		66470AF22626D80B009D541A /* My-Weather-WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66470B022626D80D009D541A /* Build configuration list for PBXNativeTarget "My-Weather-WidgetExtension" */;
+			buildPhases = (
+				66470AEF2626D80B009D541A /* Sources */,
+				66470AF02626D80B009D541A /* Frameworks */,
+				66470AF12626D80B009D541A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My-Weather-WidgetExtension";
+			productName = "My-Weather-WidgetExtension";
+			productReference = 66470AF32626D80B009D541A /* My-Weather-WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		872972DAF5F50F81FCC45DCAA314B778 /* Pods-VCRealTimeWeatherCondition */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF2178FF249634B2AD3C5ADA8D64E12D /* Build configuration list for PBXNativeTarget "Pods-VCRealTimeWeatherCondition" */;
@@ -245,14 +298,22 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 0940;
+				TargetAttributes = {
+					66470AF22626D80B009D541A = {
+						CreatedOnToolsVersion = 12.4;
+						DevelopmentTeam = ZWQWGRSN4T;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -262,9 +323,21 @@
 			targets = (
 				25622BDCA24151D7C101C916DCD4C64D /* Kanna */,
 				872972DAF5F50F81FCC45DCAA314B778 /* Pods-VCRealTimeWeatherCondition */,
+				66470AF22626D80B009D541A /* My-Weather-WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66470AF12626D80B009D541A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66470AFD2626D80D009D541A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5550E5EA8F67BEAF73EECE621A025D37 /* Sources */ = {
@@ -272,6 +345,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				971E8E289D1383924D3E4A1C0DC828C1 /* Pods-VCRealTimeWeatherCondition-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66470AEF2626D80B009D541A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66470AFA2626D80B009D541A /* My_Weather_Widget.swift in Sources */,
+				66470AFF2626D80D009D541A /* My_Weather_Widget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +399,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
 				PRODUCT_MODULE_NAME = Kanna;
@@ -492,6 +574,56 @@
 			};
 			name = Release;
 		};
+		66470B002626D80D009D541A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZWQWGRSN4T;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "My-Weather-Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.VHHC.My-Weather-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66470B012626D80D009D541A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZWQWGRSN4T;
+				INFOPLIST_FILE = "My-Weather-Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.VHHC.My-Weather-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		8EF7B920C9A93154B0107D35949918C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C7E027B1718C480BC4CF6F0AFE7D4122 /* Pods-VCRealTimeWeatherCondition.debug.xcconfig */;
@@ -544,7 +676,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
 				PRODUCT_MODULE_NAME = Kanna;
@@ -568,6 +700,15 @@
 			buildConfigurations = (
 				553022A828EE1991F07D2D73F565AEF8 /* Debug */,
 				58CE816B060A41D32CEC095441D0E3E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66470B022626D80D009D541A /* Build configuration list for PBXNativeTarget "My-Weather-WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66470B002626D80D009D541A /* Debug */,
+				66470B012626D80D009D541A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

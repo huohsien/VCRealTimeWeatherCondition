@@ -56,7 +56,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "252327EB-2C14-4BCD-8C02-09A1CA8B1D03"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VCRealTimeWeatherCondition/ViewController.swift"
@@ -66,6 +66,54 @@
             endingLineNumber = "118"
             landmarkName = "parseHtml()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "252327EB-2C14-4BCD-8C02-09A1CA8B1D03 - 3d9a633bfaab6a49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in VCRealTimeWeatherCondition.ViewController.parseHtml() -&gt; ()"
+                  moduleName = "VCRealTimeWeatherCondition"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huohsien/Developer/VCRealTimeWeatherCondition/VCRealTimeWeatherCondition/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "1968">
+               </Location>
+               <Location
+                  uuid = "252327EB-2C14-4BCD-8C02-09A1CA8B1D03 - 3d9a633bfaab6a49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in VCRealTimeWeatherCondition.ViewController.parseHtml() -&gt; ()"
+                  moduleName = "VCRealTimeWeatherCondition"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huohsien/Developer/VCRealTimeWeatherCondition/VCRealTimeWeatherCondition/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "2100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9218D462-D7DB-4032-BE98-E46E84408A8F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VCRealTimeWeatherCondition/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3"
+            endingLineNumber = "3"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
