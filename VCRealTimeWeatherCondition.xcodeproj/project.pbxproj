@@ -183,17 +183,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-VCRealTimeWeatherCondition/Pods-VCRealTimeWeatherCondition-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VCRealTimeWeatherCondition/Pods-VCRealTimeWeatherCondition-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VCRealTimeWeatherCondition/Pods-VCRealTimeWeatherCondition-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VCRealTimeWeatherCondition/Pods-VCRealTimeWeatherCondition-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VCRealTimeWeatherCondition/Pods-VCRealTimeWeatherCondition-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -3,216 +3,180 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BFABFC73768C92BC0BF0DFC90A4864C /* libxmlParserOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A466F727B3D7386DC0263564DECD56C3 /* libxmlParserOption.swift */; };
-		2627A1CC3A68ECEAD24E31D38EE0E9CD /* Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB307FCC2769DF6AAE0F426B3CD67FBD /* Kanna.swift */; };
-		3FC0E6BF09A9AF5BA5E033F07D6BEB8F /* libxmlHTMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3F18737E8E357FAFF85E7722A9E71 /* libxmlHTMLDocument.swift */; };
-		5068CB30342CE1B889BC8919C369FDFC /* Kanna.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A9CF8F19D64AE3FFF5B8A654B53E094 /* Kanna.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5AD29370BEE15404C4109062045408BD /* Pods-VCRealTimeWeatherCondition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5CB8CAEE9536B5CF89DBD1D9C215AE0 /* Pods-VCRealTimeWeatherCondition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5EFF980ECF83838DBC0B9D6D06ED0F22 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8939C1A60CBF17F148A2652D63A5BC /* Deprecated.swift */; };
-		66470AF52626D80B009D541A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66470AF42626D80B009D541A /* WidgetKit.framework */; };
-		66470AF72626D80B009D541A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66470AF62626D80B009D541A /* SwiftUI.framework */; };
-		66470AFA2626D80B009D541A /* My_Weather_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66470AF92626D80B009D541A /* My_Weather_Widget.swift */; };
-		66470AFD2626D80D009D541A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66470AFC2626D80D009D541A /* Assets.xcassets */; };
-		66470AFF2626D80D009D541A /* My_Weather_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 66470AFB2626D80B009D541A /* My_Weather_Widget.intentdefinition */; };
-		7A591A657500E4870B465A9A162A9C09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		7E43581A570B0BFBEB695C0A1BD53D03 /* Kanna-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF7D01122C5331D6D5934242A7B6C27 /* Kanna-dummy.m */; };
-		8D75E8BED10A4230F8A7D241CFFCCC0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		958603139AA7BC0E80A2A604523087D3 /* Kanna-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DCBE7A2104C935A6975E9D0081AB20 /* Kanna-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		971E8E289D1383924D3E4A1C0DC828C1 /* Pods-VCRealTimeWeatherCondition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1273C45576593CA31506AA47B77F962E /* Pods-VCRealTimeWeatherCondition-dummy.m */; };
-		9CC447445BCDEE1FB47BF9D726736A76 /* libxmlHTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204BF4A10A94ED5897D1FB70F74544AD /* libxmlHTMLNode.swift */; };
-		9D1E8FD7EC7AA80A5D70EDAECB07D18D /* CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A931467BF099735CFBEFAAA41A11BCE9 /* CSS.swift */; };
+		183ED56ED5A304D31BF95FB4FF100E09 /* libxmlHTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C08941CDFC33D471397456EA14874A4 /* libxmlHTMLNode.swift */; };
+		1E8EF0BB649DA1E23A21D616BB18B82C /* Pods-VCRealTimeWeatherCondition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD3ED8F46F355C9A55084FB83D022B8 /* Pods-VCRealTimeWeatherCondition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F5E8CC0E12AED9DEF1FA149713B3D29 /* Kanna-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE9504041BB3B44A507605A0478D00FF /* Kanna-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4931A0D52921C13D6BE42385AB5F9A62 /* CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C384A3CDDCDD7D63480D9C7A250665FA /* CSS.swift */; };
+		5366392E776A0A7B748747692B3B0270 /* Pods-VCRealTimeWeatherCondition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2200E969CE5E98CD72605310F773C3 /* Pods-VCRealTimeWeatherCondition-dummy.m */; };
+		5649DC8F3E785DB6136A408EAE854679 /* libxmlParserOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117A07D2F2BF480E5B7CBB1D7D6FA636 /* libxmlParserOption.swift */; };
+		713679F510BE0BF69B3B198C0199C469 /* libxmlHTMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D920AC17EE40CA2535317270ADBC52FC /* libxmlHTMLDocument.swift */; };
+		75FC6E55C9022DD6478F31ABB5FDE055 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		77152C665E35672635B62E34D69478C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		98A80A975711A029440E5197142990E9 /* Kanna.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A683CB777AD6B42445E222B31E7C9F /* Kanna.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F1523B4EDB43ABF65ADB49E3CDB823F /* Kanna-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6742F6D36F71D454816A744226D1E0 /* Kanna-dummy.m */; };
+		C9BE9617EFABC5E589FADF6F81B08EEE /* Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5582D0C12F4E64E2E1862EC39FC91BE /* Kanna.swift */; };
+		EC33DD6EFB5A6494B059FD762316B939 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83339B2C21731F421A184383447BEF /* Deprecated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3765FD270A6F9A3FC2E1A2FF274AFF78 /* PBXContainerItemProxy */ = {
+		392E9058A703CE76C4E781CF77B32102 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 25622BDCA24151D7C101C916DCD4C64D;
+			remoteGlobalIDString = 93AC747EDE1EE56F89BBF405C1D67027;
 			remoteInfo = Kanna;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1273C45576593CA31506AA47B77F962E /* Pods-VCRealTimeWeatherCondition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VCRealTimeWeatherCondition-dummy.m"; sourceTree = "<group>"; };
-		187DAC7367FB4C3F8C39748D1D05B16A /* Pods-VCRealTimeWeatherCondition-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VCRealTimeWeatherCondition-resources.sh"; sourceTree = "<group>"; };
-		204BF4A10A94ED5897D1FB70F74544AD /* libxmlHTMLNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLNode.swift; path = Sources/Kanna/libxmlHTMLNode.swift; sourceTree = "<group>"; };
-		22DCBE7A2104C935A6975E9D0081AB20 /* Kanna-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-umbrella.h"; sourceTree = "<group>"; };
-		235186DAE03BBFEB89B4406ADEFD7635 /* Kanna-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-prefix.pch"; sourceTree = "<group>"; };
-		2B6CD96D3103B12D1C612B137EE7D97A /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5025EF01E98C0A1F8E478186E3166C1F /* Pods-VCRealTimeWeatherCondition-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VCRealTimeWeatherCondition-frameworks.sh"; sourceTree = "<group>"; };
-		505AB5A5A1991EE5284E58EB038C98B0 /* Kanna.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Kanna.modulemap; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		66470AF32626D80B009D541A /* My-Weather-WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "My-Weather-WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		66470AF42626D80B009D541A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
-		66470AF62626D80B009D541A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		66470AF92626D80B009D541A /* My_Weather_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Weather_Widget.swift; sourceTree = "<group>"; };
-		66470AFB2626D80B009D541A /* My_Weather_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = My_Weather_Widget.intentdefinition; sourceTree = "<group>"; };
-		66470AFC2626D80D009D541A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		66470AFE2626D80D009D541A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6716BF00DB67D49B9209A83718ED87E9 /* Pods-VCRealTimeWeatherCondition-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VCRealTimeWeatherCondition-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7A9CF8F19D64AE3FFF5B8A654B53E094 /* Kanna.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kanna.h; path = Sources/Kanna/Kanna.h; sourceTree = "<group>"; };
-		885F099609EF40D1A8F8D3FB2D2985B0 /* Pods_VCRealTimeWeatherCondition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VCRealTimeWeatherCondition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E8939C1A60CBF17F148A2652D63A5BC /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = Sources/Kanna/Deprecated.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A466F727B3D7386DC0263564DECD56C3 /* libxmlParserOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlParserOption.swift; path = Sources/Kanna/libxmlParserOption.swift; sourceTree = "<group>"; };
-		A721632633A4B3ECCC5216EFF1D76D20 /* Kanna.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kanna.xcconfig; sourceTree = "<group>"; };
-		A931467BF099735CFBEFAAA41A11BCE9 /* CSS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSS.swift; path = Sources/Kanna/CSS.swift; sourceTree = "<group>"; };
-		ABD3F18737E8E357FAFF85E7722A9E71 /* libxmlHTMLDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLDocument.swift; path = Sources/Kanna/libxmlHTMLDocument.swift; sourceTree = "<group>"; };
-		AD30C1D78A496FBC701FD1870D21F515 /* Pods-VCRealTimeWeatherCondition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VCRealTimeWeatherCondition.release.xcconfig"; sourceTree = "<group>"; };
-		C0006899710136346D3F4DF212DECCA2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C304CB1E15F2B67BFA31521FCAC9F055 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7E027B1718C480BC4CF6F0AFE7D4122 /* Pods-VCRealTimeWeatherCondition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VCRealTimeWeatherCondition.debug.xcconfig"; sourceTree = "<group>"; };
-		D5CB8CAEE9536B5CF89DBD1D9C215AE0 /* Pods-VCRealTimeWeatherCondition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VCRealTimeWeatherCondition-umbrella.h"; sourceTree = "<group>"; };
-		DB307FCC2769DF6AAE0F426B3CD67FBD /* Kanna.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kanna.swift; path = Sources/Kanna/Kanna.swift; sourceTree = "<group>"; };
-		DEF7D01122C5331D6D5934242A7B6C27 /* Kanna-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kanna-dummy.m"; sourceTree = "<group>"; };
-		F599A9F6544B6EA16C5F4B175FBF17D4 /* Pods-VCRealTimeWeatherCondition-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VCRealTimeWeatherCondition-acknowledgements.plist"; sourceTree = "<group>"; };
-		FD6DF83F5AEF0C7B401F2E38D45A9353 /* Pods-VCRealTimeWeatherCondition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VCRealTimeWeatherCondition.modulemap"; sourceTree = "<group>"; };
+		025CBFFCEE7E56AE2DDB727790DCFB9B /* Kanna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kanna.debug.xcconfig; sourceTree = "<group>"; };
+		0A83339B2C21731F421A184383447BEF /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = Sources/Kanna/Deprecated.swift; sourceTree = "<group>"; };
+		117A07D2F2BF480E5B7CBB1D7D6FA636 /* libxmlParserOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlParserOption.swift; path = Sources/Kanna/libxmlParserOption.swift; sourceTree = "<group>"; };
+		12A394F64D5ECCE12B91E06BB0E99EF0 /* Pods-VCRealTimeWeatherCondition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VCRealTimeWeatherCondition.modulemap"; sourceTree = "<group>"; };
+		22A7C644B31005CF560348505A7D2200 /* Pods-VCRealTimeWeatherCondition-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VCRealTimeWeatherCondition-acknowledgements.plist"; sourceTree = "<group>"; };
+		252E53F1A6F91F602F5819DE98FAFBE5 /* Pods-VCRealTimeWeatherCondition-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VCRealTimeWeatherCondition-Info.plist"; sourceTree = "<group>"; };
+		2C9ABE235D3CE12F3B249A338E8E6E19 /* Kanna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kanna.release.xcconfig; sourceTree = "<group>"; };
+		3EA922F9B70178D64EE578C60F4DD23B /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A68AACC880709D3525BF5084F5DF35 /* Pods-VCRealTimeWeatherCondition-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VCRealTimeWeatherCondition-frameworks.sh"; sourceTree = "<group>"; };
+		4C6742F6D36F71D454816A744226D1E0 /* Kanna-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kanna-dummy.m"; sourceTree = "<group>"; };
+		526D28EE014C798EBB88B7F54A694184 /* Kanna.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Kanna.modulemap; sourceTree = "<group>"; };
+		53AF0FAE236CFC7C94B8999E03F74986 /* Kanna-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-prefix.pch"; sourceTree = "<group>"; };
+		6BC7001903C141B686F4E92CE07A09C7 /* Pods-VCRealTimeWeatherCondition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VCRealTimeWeatherCondition.debug.xcconfig"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7C08941CDFC33D471397456EA14874A4 /* libxmlHTMLNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLNode.swift; path = Sources/Kanna/libxmlHTMLNode.swift; sourceTree = "<group>"; };
+		93BE35EF7224BA32A2839A078C454074 /* Pods-VCRealTimeWeatherCondition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VCRealTimeWeatherCondition.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AEC68671DBA4B7443CD975F742A3DDBA /* Kanna-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Kanna-Info.plist"; sourceTree = "<group>"; };
+		AF9470DC66BE7B060F9C04209630781A /* Pods-VCRealTimeWeatherCondition-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VCRealTimeWeatherCondition-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BF2200E969CE5E98CD72605310F773C3 /* Pods-VCRealTimeWeatherCondition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VCRealTimeWeatherCondition-dummy.m"; sourceTree = "<group>"; };
+		C384A3CDDCDD7D63480D9C7A250665FA /* CSS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSS.swift; path = Sources/Kanna/CSS.swift; sourceTree = "<group>"; };
+		D920AC17EE40CA2535317270ADBC52FC /* libxmlHTMLDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLDocument.swift; path = Sources/Kanna/libxmlHTMLDocument.swift; sourceTree = "<group>"; };
+		DCD3ED8F46F355C9A55084FB83D022B8 /* Pods-VCRealTimeWeatherCondition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VCRealTimeWeatherCondition-umbrella.h"; sourceTree = "<group>"; };
+		ECDD02D0F4147208B445C79555DDBEB9 /* Pods_VCRealTimeWeatherCondition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VCRealTimeWeatherCondition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A683CB777AD6B42445E222B31E7C9F /* Kanna.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kanna.h; path = Sources/Kanna/Kanna.h; sourceTree = "<group>"; };
+		F5582D0C12F4E64E2E1862EC39FC91BE /* Kanna.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kanna.swift; path = Sources/Kanna/Kanna.swift; sourceTree = "<group>"; };
+		FE9504041BB3B44A507605A0478D00FF /* Kanna-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0A22E6F60E29070B51192251E223A083 /* Frameworks */ = {
+		508A294EA9A4BB97F17807BBC91FB935 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A591A657500E4870B465A9A162A9C09 /* Foundation.framework in Frameworks */,
+				75FC6E55C9022DD6478F31ABB5FDE055 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		370614CA4348BDBF50CB105CC7A51554 /* Frameworks */ = {
+		BD040212932C464BD48E25437FBFD03C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D75E8BED10A4230F8A7D241CFFCCC0D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		66470AF02626D80B009D541A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				66470AF72626D80B009D541A /* SwiftUI.framework in Frameworks */,
-				66470AF52626D80B009D541A /* WidgetKit.framework in Frameworks */,
+				77152C665E35672635B62E34D69478C1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		32EFED28F33A2CAD95C93766791F433D /* Support Files */ = {
+		155418EE731BC926FEB8C7D5ACCD6B74 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C0006899710136346D3F4DF212DECCA2 /* Info.plist */,
-				505AB5A5A1991EE5284E58EB038C98B0 /* Kanna.modulemap */,
-				A721632633A4B3ECCC5216EFF1D76D20 /* Kanna.xcconfig */,
-				DEF7D01122C5331D6D5934242A7B6C27 /* Kanna-dummy.m */,
-				235186DAE03BBFEB89B4406ADEFD7635 /* Kanna-prefix.pch */,
-				22DCBE7A2104C935A6975E9D0081AB20 /* Kanna-umbrella.h */,
+				526D28EE014C798EBB88B7F54A694184 /* Kanna.modulemap */,
+				4C6742F6D36F71D454816A744226D1E0 /* Kanna-dummy.m */,
+				AEC68671DBA4B7443CD975F742A3DDBA /* Kanna-Info.plist */,
+				53AF0FAE236CFC7C94B8999E03F74986 /* Kanna-prefix.pch */,
+				FE9504041BB3B44A507605A0478D00FF /* Kanna-umbrella.h */,
+				025CBFFCEE7E56AE2DDB727790DCFB9B /* Kanna.debug.xcconfig */,
+				2C9ABE235D3CE12F3B249A338E8E6E19 /* Kanna.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Kanna";
 			sourceTree = "<group>";
 		};
-		3B6964DA2105390D1E4DA1A1C475EFE7 /* Pods */ = {
+		31660038A48EA5F471663966436524E8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B6D88DE73731D8B8D2334DB64212660E /* Kanna */,
+				5672C2D6CCB9AE4788F800458CFCF0AE /* Kanna */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		641DB97A871AC158757F1ED6EA5BAB75 /* Targets Support Files */ = {
+		5672C2D6CCB9AE4788F800458CFCF0AE /* Kanna */ = {
 			isa = PBXGroup;
 			children = (
-				BE8B02DEB02F21A76297D1CA7AD04240 /* Pods-VCRealTimeWeatherCondition */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		66470AF82626D80B009D541A /* My-Weather-Widget */ = {
-			isa = PBXGroup;
-			children = (
-				66470AF92626D80B009D541A /* My_Weather_Widget.swift */,
-				66470AFB2626D80B009D541A /* My_Weather_Widget.intentdefinition */,
-				66470AFC2626D80D009D541A /* Assets.xcassets */,
-				66470AFE2626D80D009D541A /* Info.plist */,
-			);
-			path = "My-Weather-Widget";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				66470AF82626D80B009D541A /* My-Weather-Widget */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				3B6964DA2105390D1E4DA1A1C475EFE7 /* Pods */,
-				E1FDD37DF752A9F9F287F0F94A8D567F /* Products */,
-				641DB97A871AC158757F1ED6EA5BAB75 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		B6D88DE73731D8B8D2334DB64212660E /* Kanna */ = {
-			isa = PBXGroup;
-			children = (
-				A931467BF099735CFBEFAAA41A11BCE9 /* CSS.swift */,
-				8E8939C1A60CBF17F148A2652D63A5BC /* Deprecated.swift */,
-				7A9CF8F19D64AE3FFF5B8A654B53E094 /* Kanna.h */,
-				DB307FCC2769DF6AAE0F426B3CD67FBD /* Kanna.swift */,
-				ABD3F18737E8E357FAFF85E7722A9E71 /* libxmlHTMLDocument.swift */,
-				204BF4A10A94ED5897D1FB70F74544AD /* libxmlHTMLNode.swift */,
-				A466F727B3D7386DC0263564DECD56C3 /* libxmlParserOption.swift */,
-				32EFED28F33A2CAD95C93766791F433D /* Support Files */,
+				C384A3CDDCDD7D63480D9C7A250665FA /* CSS.swift */,
+				0A83339B2C21731F421A184383447BEF /* Deprecated.swift */,
+				F3A683CB777AD6B42445E222B31E7C9F /* Kanna.h */,
+				F5582D0C12F4E64E2E1862EC39FC91BE /* Kanna.swift */,
+				D920AC17EE40CA2535317270ADBC52FC /* libxmlHTMLDocument.swift */,
+				7C08941CDFC33D471397456EA14874A4 /* libxmlHTMLNode.swift */,
+				117A07D2F2BF480E5B7CBB1D7D6FA636 /* libxmlParserOption.swift */,
+				155418EE731BC926FEB8C7D5ACCD6B74 /* Support Files */,
 			);
 			path = Kanna;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-				66470AF42626D80B009D541A /* WidgetKit.framework */,
-				66470AF62626D80B009D541A /* SwiftUI.framework */,
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		BE8B02DEB02F21A76297D1CA7AD04240 /* Pods-VCRealTimeWeatherCondition */ = {
+		720AFB900B3ABFDF50FD8AF7BFF1BAED /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C304CB1E15F2B67BFA31521FCAC9F055 /* Info.plist */,
-				FD6DF83F5AEF0C7B401F2E38D45A9353 /* Pods-VCRealTimeWeatherCondition.modulemap */,
-				6716BF00DB67D49B9209A83718ED87E9 /* Pods-VCRealTimeWeatherCondition-acknowledgements.markdown */,
-				F599A9F6544B6EA16C5F4B175FBF17D4 /* Pods-VCRealTimeWeatherCondition-acknowledgements.plist */,
-				1273C45576593CA31506AA47B77F962E /* Pods-VCRealTimeWeatherCondition-dummy.m */,
-				5025EF01E98C0A1F8E478186E3166C1F /* Pods-VCRealTimeWeatherCondition-frameworks.sh */,
-				187DAC7367FB4C3F8C39748D1D05B16A /* Pods-VCRealTimeWeatherCondition-resources.sh */,
-				D5CB8CAEE9536B5CF89DBD1D9C215AE0 /* Pods-VCRealTimeWeatherCondition-umbrella.h */,
-				C7E027B1718C480BC4CF6F0AFE7D4122 /* Pods-VCRealTimeWeatherCondition.debug.xcconfig */,
-				AD30C1D78A496FBC701FD1870D21F515 /* Pods-VCRealTimeWeatherCondition.release.xcconfig */,
+				873D7D0EA8AA316D043BAA999467B2C3 /* Pods-VCRealTimeWeatherCondition */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		873D7D0EA8AA316D043BAA999467B2C3 /* Pods-VCRealTimeWeatherCondition */ = {
+			isa = PBXGroup;
+			children = (
+				12A394F64D5ECCE12B91E06BB0E99EF0 /* Pods-VCRealTimeWeatherCondition.modulemap */,
+				AF9470DC66BE7B060F9C04209630781A /* Pods-VCRealTimeWeatherCondition-acknowledgements.markdown */,
+				22A7C644B31005CF560348505A7D2200 /* Pods-VCRealTimeWeatherCondition-acknowledgements.plist */,
+				BF2200E969CE5E98CD72605310F773C3 /* Pods-VCRealTimeWeatherCondition-dummy.m */,
+				48A68AACC880709D3525BF5084F5DF35 /* Pods-VCRealTimeWeatherCondition-frameworks.sh */,
+				252E53F1A6F91F602F5819DE98FAFBE5 /* Pods-VCRealTimeWeatherCondition-Info.plist */,
+				DCD3ED8F46F355C9A55084FB83D022B8 /* Pods-VCRealTimeWeatherCondition-umbrella.h */,
+				6BC7001903C141B686F4E92CE07A09C7 /* Pods-VCRealTimeWeatherCondition.debug.xcconfig */,
+				93BE35EF7224BA32A2839A078C454074 /* Pods-VCRealTimeWeatherCondition.release.xcconfig */,
 			);
 			name = "Pods-VCRealTimeWeatherCondition";
 			path = "Target Support Files/Pods-VCRealTimeWeatherCondition";
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				31660038A48EA5F471663966436524E8 /* Pods */,
+				FA82602C83F94A19CB309A0D4DC3DE91 /* Products */,
+				720AFB900B3ABFDF50FD8AF7BFF1BAED /* Targets Support Files */,
 			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
-		E1FDD37DF752A9F9F287F0F94A8D567F /* Products */ = {
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2B6CD96D3103B12D1C612B137EE7D97A /* Kanna.framework */,
-				885F099609EF40D1A8F8D3FB2D2985B0 /* Pods_VCRealTimeWeatherCondition.framework */,
-				66470AF32626D80B009D541A /* My-Weather-WidgetExtension.appex */,
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA82602C83F94A19CB309A0D4DC3DE91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EA922F9B70178D64EE578C60F4DD23B /* Kanna.framework */,
+				ECDD02D0F4147208B445C79555DDBEB9 /* Pods_VCRealTimeWeatherCondition.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,33 +184,34 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		03746546494E3152D2020D516EEB9EF2 /* Headers */ = {
+		82BF1027310F56E59DEEBA91332EB1CF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				958603139AA7BC0E80A2A604523087D3 /* Kanna-umbrella.h in Headers */,
-				5068CB30342CE1B889BC8919C369FDFC /* Kanna.h in Headers */,
+				1E8EF0BB649DA1E23A21D616BB18B82C /* Pods-VCRealTimeWeatherCondition-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1AB3B28A42B8E3A3827A45844383D1DF /* Headers */ = {
+		E051C2FED2B76294071BFA50D9FA719D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AD29370BEE15404C4109062045408BD /* Pods-VCRealTimeWeatherCondition-umbrella.h in Headers */,
+				1F5E8CC0E12AED9DEF1FA149713B3D29 /* Kanna-umbrella.h in Headers */,
+				98A80A975711A029440E5197142990E9 /* Kanna.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		25622BDCA24151D7C101C916DCD4C64D /* Kanna */ = {
+		93AC747EDE1EE56F89BBF405C1D67027 /* Kanna */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7AB44AF8BAEE9AAA4A1F43C81EA08FFD /* Build configuration list for PBXNativeTarget "Kanna" */;
+			buildConfigurationList = 8A4AEBE015FDE4C158608D0B493CB29F /* Build configuration list for PBXNativeTarget "Kanna" */;
 			buildPhases = (
-				9F9A2408D6A4A54982BF17E59FBC36C4 /* Sources */,
-				0A22E6F60E29070B51192251E223A083 /* Frameworks */,
-				03746546494E3152D2020D516EEB9EF2 /* Headers */,
+				E051C2FED2B76294071BFA50D9FA719D /* Headers */,
+				16CE5D8FE9C68C5D927D695CD44D7F84 /* Sources */,
+				BD040212932C464BD48E25437FBFD03C /* Frameworks */,
+				D20FACCE86A71BB5A35B83189D2F40FA /* Resources */,
 			);
 			buildRules = (
 			);
@@ -254,140 +219,187 @@
 			);
 			name = Kanna;
 			productName = Kanna;
-			productReference = 2B6CD96D3103B12D1C612B137EE7D97A /* Kanna.framework */;
+			productReference = 3EA922F9B70178D64EE578C60F4DD23B /* Kanna.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		66470AF22626D80B009D541A /* My-Weather-WidgetExtension */ = {
+		A4CB5AEF16ED03C04DF6515DDC12FF22 /* Pods-VCRealTimeWeatherCondition */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66470B022626D80D009D541A /* Build configuration list for PBXNativeTarget "My-Weather-WidgetExtension" */;
+			buildConfigurationList = 623A67BA9B4AE86AF4A41B033EFCE32E /* Build configuration list for PBXNativeTarget "Pods-VCRealTimeWeatherCondition" */;
 			buildPhases = (
-				66470AEF2626D80B009D541A /* Sources */,
-				66470AF02626D80B009D541A /* Frameworks */,
-				66470AF12626D80B009D541A /* Resources */,
+				82BF1027310F56E59DEEBA91332EB1CF /* Headers */,
+				1987EB14C742A732AE40E3350705FABF /* Sources */,
+				508A294EA9A4BB97F17807BBC91FB935 /* Frameworks */,
+				D5B084A87B366099954EE8BC9D2C6E81 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "My-Weather-WidgetExtension";
-			productName = "My-Weather-WidgetExtension";
-			productReference = 66470AF32626D80B009D541A /* My-Weather-WidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		872972DAF5F50F81FCC45DCAA314B778 /* Pods-VCRealTimeWeatherCondition */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CF2178FF249634B2AD3C5ADA8D64E12D /* Build configuration list for PBXNativeTarget "Pods-VCRealTimeWeatherCondition" */;
-			buildPhases = (
-				5550E5EA8F67BEAF73EECE621A025D37 /* Sources */,
-				370614CA4348BDBF50CB105CC7A51554 /* Frameworks */,
-				1AB3B28A42B8E3A3827A45844383D1DF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EF17CB63686F1A36435717617E243397 /* PBXTargetDependency */,
+				D746D56E607074601BBE970A4EE69C3F /* PBXTargetDependency */,
 			);
 			name = "Pods-VCRealTimeWeatherCondition";
 			productName = "Pods-VCRealTimeWeatherCondition";
-			productReference = 885F099609EF40D1A8F8D3FB2D2985B0 /* Pods_VCRealTimeWeatherCondition.framework */;
+			productReference = ECDD02D0F4147208B445C79555DDBEB9 /* Pods_VCRealTimeWeatherCondition.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 0940;
-				TargetAttributes = {
-					66470AF22626D80B009D541A = {
-						CreatedOnToolsVersion = 12.4;
-						DevelopmentTeam = ZWQWGRSN4T;
-						ProvisioningStyle = Automatic;
-					};
-				};
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E1FDD37DF752A9F9F287F0F94A8D567F /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FA82602C83F94A19CB309A0D4DC3DE91 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				25622BDCA24151D7C101C916DCD4C64D /* Kanna */,
-				872972DAF5F50F81FCC45DCAA314B778 /* Pods-VCRealTimeWeatherCondition */,
-				66470AF22626D80B009D541A /* My-Weather-WidgetExtension */,
+				93AC747EDE1EE56F89BBF405C1D67027 /* Kanna */,
+				A4CB5AEF16ED03C04DF6515DDC12FF22 /* Pods-VCRealTimeWeatherCondition */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		66470AF12626D80B009D541A /* Resources */ = {
+		D20FACCE86A71BB5A35B83189D2F40FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66470AFD2626D80D009D541A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B084A87B366099954EE8BC9D2C6E81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5550E5EA8F67BEAF73EECE621A025D37 /* Sources */ = {
+		16CE5D8FE9C68C5D927D695CD44D7F84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				971E8E289D1383924D3E4A1C0DC828C1 /* Pods-VCRealTimeWeatherCondition-dummy.m in Sources */,
+				4931A0D52921C13D6BE42385AB5F9A62 /* CSS.swift in Sources */,
+				EC33DD6EFB5A6494B059FD762316B939 /* Deprecated.swift in Sources */,
+				9F1523B4EDB43ABF65ADB49E3CDB823F /* Kanna-dummy.m in Sources */,
+				C9BE9617EFABC5E589FADF6F81B08EEE /* Kanna.swift in Sources */,
+				713679F510BE0BF69B3B198C0199C469 /* libxmlHTMLDocument.swift in Sources */,
+				183ED56ED5A304D31BF95FB4FF100E09 /* libxmlHTMLNode.swift in Sources */,
+				5649DC8F3E785DB6136A408EAE854679 /* libxmlParserOption.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66470AEF2626D80B009D541A /* Sources */ = {
+		1987EB14C742A732AE40E3350705FABF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66470AFA2626D80B009D541A /* My_Weather_Widget.swift in Sources */,
-				66470AFF2626D80D009D541A /* My_Weather_Widget.intentdefinition in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F9A2408D6A4A54982BF17E59FBC36C4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9D1E8FD7EC7AA80A5D70EDAECB07D18D /* CSS.swift in Sources */,
-				5EFF980ECF83838DBC0B9D6D06ED0F22 /* Deprecated.swift in Sources */,
-				7E43581A570B0BFBEB695C0A1BD53D03 /* Kanna-dummy.m in Sources */,
-				2627A1CC3A68ECEAD24E31D38EE0E9CD /* Kanna.swift in Sources */,
-				3FC0E6BF09A9AF5BA5E033F07D6BEB8F /* libxmlHTMLDocument.swift in Sources */,
-				9CC447445BCDEE1FB47BF9D726736A76 /* libxmlHTMLNode.swift in Sources */,
-				1BFABFC73768C92BC0BF0DFC90A4864C /* libxmlParserOption.swift in Sources */,
+				5366392E776A0A7B748747692B3B0270 /* Pods-VCRealTimeWeatherCondition-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EF17CB63686F1A36435717617E243397 /* PBXTargetDependency */ = {
+		D746D56E607074601BBE970A4EE69C3F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Kanna;
-			target = 25622BDCA24151D7C101C916DCD4C64D /* Kanna */;
-			targetProxy = 3765FD270A6F9A3FC2E1A2FF274AFF78 /* PBXContainerItemProxy */;
+			target = 93AC747EDE1EE56F89BBF405C1D67027 /* Kanna */;
+			targetProxy = 392E9058A703CE76C4E781CF77B32102 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0FBA864F75F6BBA614D76C854B316829 /* Release */ = {
+		22324B632F1927CC852DCADE2209C459 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A721632633A4B3ECCC5216EFF1D76D20 /* Kanna.xcconfig */;
+			baseConfigurationReference = 6BC7001903C141B686F4E92CE07A09C7 /* Pods-VCRealTimeWeatherCondition.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VCRealTimeWeatherCondition/Pods-VCRealTimeWeatherCondition-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VCRealTimeWeatherCondition/Pods-VCRealTimeWeatherCondition.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		455B14D6900163C34C956E2F1ED724D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93BE35EF7224BA32A2839A078C454074 /* Pods-VCRealTimeWeatherCondition.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VCRealTimeWeatherCondition/Pods-VCRealTimeWeatherCondition-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VCRealTimeWeatherCondition/Pods-VCRealTimeWeatherCondition.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		79C0DF802EFAF25BA39B85307EF4D81B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C9ABE235D3CE12F3B249A338E8E6E19 /* Kanna.release.xcconfig */;
+			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -397,18 +409,21 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Kanna/Kanna-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
 				PRODUCT_MODULE_NAME = Kanna;
 				PRODUCT_NAME = Kanna;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -416,10 +431,11 @@
 			};
 			name = Release;
 		};
-		553022A828EE1991F07D2D73F565AEF8 /* Debug */ = {
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -442,14 +458,13 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -469,20 +484,24 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		58CE816B060A41D32CEC095441D0E3E0 /* Release */ = {
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -505,14 +524,13 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -529,142 +547,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		5C4563A381E85A75BF47AFE3024ABDC8 /* Release */ = {
+		CE0E46CF47AEBCEAFCC6F2FB2968807A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD30C1D78A496FBC701FD1870D21F515 /* Pods-VCRealTimeWeatherCondition.release.xcconfig */;
+			baseConfigurationReference = 025CBFFCEE7E56AE2DDB727790DCFB9B /* Kanna.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-VCRealTimeWeatherCondition/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VCRealTimeWeatherCondition/Pods-VCRealTimeWeatherCondition.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		66470B002626D80D009D541A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZWQWGRSN4T;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "My-Weather-Widget/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.VHHC.My-Weather-Widget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		66470B012626D80D009D541A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZWQWGRSN4T;
-				INFOPLIST_FILE = "My-Weather-Widget/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.VHHC.My-Weather-Widget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		8EF7B920C9A93154B0107D35949918C8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7E027B1718C480BC4CF6F0AFE7D4122 /* Pods-VCRealTimeWeatherCondition.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-VCRealTimeWeatherCondition/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VCRealTimeWeatherCondition/Pods-VCRealTimeWeatherCondition.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EB95D9F6AE42E7E881694EB0A6888C02 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A721632633A4B3ECCC5216EFF1D76D20 /* Kanna.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -674,18 +572,21 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Kanna/Kanna-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
 				PRODUCT_MODULE_NAME = Kanna;
 				PRODUCT_NAME = Kanna;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -695,43 +596,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				553022A828EE1991F07D2D73F565AEF8 /* Debug */,
-				58CE816B060A41D32CEC095441D0E3E0 /* Release */,
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66470B022626D80D009D541A /* Build configuration list for PBXNativeTarget "My-Weather-WidgetExtension" */ = {
+		623A67BA9B4AE86AF4A41B033EFCE32E /* Build configuration list for PBXNativeTarget "Pods-VCRealTimeWeatherCondition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				66470B002626D80D009D541A /* Debug */,
-				66470B012626D80D009D541A /* Release */,
+				22324B632F1927CC852DCADE2209C459 /* Debug */,
+				455B14D6900163C34C956E2F1ED724D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7AB44AF8BAEE9AAA4A1F43C81EA08FFD /* Build configuration list for PBXNativeTarget "Kanna" */ = {
+		8A4AEBE015FDE4C158608D0B493CB29F /* Build configuration list for PBXNativeTarget "Kanna" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EB95D9F6AE42E7E881694EB0A6888C02 /* Debug */,
-				0FBA864F75F6BBA614D76C854B316829 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CF2178FF249634B2AD3C5ADA8D64E12D /* Build configuration list for PBXNativeTarget "Pods-VCRealTimeWeatherCondition" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8EF7B920C9A93154B0107D35949918C8 /* Debug */,
-				5C4563A381E85A75BF47AFE3024ABDC8 /* Release */,
+				CE0E46CF47AEBCEAFCC6F2FB2968807A /* Debug */,
+				79C0DF802EFAF25BA39B85307EF4D81B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

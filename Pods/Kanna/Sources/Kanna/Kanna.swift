@@ -23,12 +23,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 import Foundation
-
-#if SWIFT_PACKAGE
-import SwiftClibxml2
-#else
-import libxmlKanna
-#endif
+import libxml2
 
 /*
 ParseOption
@@ -39,8 +34,8 @@ public enum ParseOption {
     case htmlParseUseLibxml(Libxml2HTMLParserOptions)
 }
 
-public let kDefaultXmlParseOption   = ParseOption.xmlParseUseLibxml([.RECOVER, .NOERROR, .NOWARNING])
-public let kDefaultHtmlParseOption  = ParseOption.htmlParseUseLibxml([.RECOVER, .NOERROR, .NOWARNING])
+public let kDefaultXmlParseOption  = ParseOption.xmlParseUseLibxml([.RECOVER, .NOERROR, .NOWARNING])
+public let kDefaultHtmlParseOption = ParseOption.htmlParseUseLibxml([.RECOVER, .NOERROR, .NOWARNING])
 
 public enum ParseError: Error {
     case Empty
@@ -56,7 +51,7 @@ Parse XML
 @param encoding the document encoding
 @param options  a ParserOption
 */
-public func XML(xml: String, url: String?, encoding: String.Encoding, option: ParseOption = kDefaultXmlParseOption) throws -> XMLDocument {
+public func XML(xml: String, url: String? = nil, encoding: String.Encoding, option: ParseOption = kDefaultXmlParseOption) throws -> XMLDocument {
     switch option {
     case .xmlParseUseLibxml(let opt):
         return try libxmlXMLDocument(xml: xml, url: url, encoding: encoding, option: opt.rawValue)
@@ -65,20 +60,12 @@ public func XML(xml: String, url: String?, encoding: String.Encoding, option: Pa
     }
 }
 
-public func XML(xml: String, encoding: String.Encoding, option: ParseOption = kDefaultXmlParseOption) throws -> XMLDocument {
-    return try XML(xml: xml, url: nil, encoding: encoding, option: option)
-}
-
 // NSData
-public func XML(xml: Data, url: String?, encoding: String.Encoding, option: ParseOption = kDefaultXmlParseOption) throws -> XMLDocument {
+public func XML(xml: Data, url: String? = nil, encoding: String.Encoding, option: ParseOption = kDefaultXmlParseOption) throws -> XMLDocument {
     guard let xmlStr = String(data: xml, encoding: encoding) else {
         throw ParseError.EncodingMismatch
     }
     return try XML(xml: xmlStr, url: url, encoding: encoding, option: option)
-}
-
-public func XML(xml: Data, encoding: String.Encoding, option: ParseOption = kDefaultXmlParseOption) throws -> XMLDocument {
-    return try XML(xml: xml, url: nil, encoding: encoding, option: option)
 }
 
 // NSURL
@@ -97,7 +84,7 @@ Parse HTML
 @param encoding the document encoding
 @param options  a ParserOption
 */
-public func HTML(html: String, url: String?, encoding: String.Encoding, option: ParseOption = kDefaultHtmlParseOption) throws -> HTMLDocument {
+public func HTML(html: String, url: String? = nil, encoding: String.Encoding, option: ParseOption = kDefaultHtmlParseOption) throws -> HTMLDocument {
     switch option {
     case .htmlParseUseLibxml(let opt):
         return try libxmlHTMLDocument(html: html, url: url, encoding: encoding, option: opt.rawValue)
@@ -106,20 +93,12 @@ public func HTML(html: String, url: String?, encoding: String.Encoding, option: 
     }
 }
 
-public func HTML(html: String, encoding: String.Encoding, option: ParseOption = kDefaultHtmlParseOption) throws -> HTMLDocument {
-    return try HTML(html: html, url: nil, encoding: encoding, option: option)
-}
-
 // NSData
-public func HTML(html: Data, url: String?, encoding: String.Encoding, option: ParseOption = kDefaultHtmlParseOption) throws -> HTMLDocument {
+public func HTML(html: Data, url: String? = nil, encoding: String.Encoding, option: ParseOption = kDefaultHtmlParseOption) throws -> HTMLDocument {
     guard let htmlStr = String(data: html, encoding: encoding) else {
         throw ParseError.EncodingMismatch
     }
     return try HTML(html: htmlStr, url: url, encoding: encoding, option: option)
-}
-
-public func HTML(html: Data, encoding: String.Encoding, option: ParseOption = kDefaultHtmlParseOption) throws -> HTMLDocument {
-    return try HTML(html: html, url: nil, encoding: encoding, option: option)
 }
 
 // NSURL
@@ -139,20 +118,32 @@ public protocol Searchable {
     
     @param xpath
      */
-    func xpath(_ xpath: String, namespaces: [String:String]?) -> XPathObject
-    func xpath(_ xpath: String) -> XPathObject
-    func at_xpath(_ xpath: String, namespaces: [String:String]?) -> XMLElement?
-    func at_xpath(_ xpath: String) -> XMLElement?
-    
+    func xpath(_ xpath: String, namespaces: [String: String]?) -> XPathObject
+
     /**
     Search for node from current node by CSS selector.
     
     @param selector a CSS selector
     */
-    func css(_ selector: String, namespaces: [String:String]?) -> XPathObject
-    func css(_ selector: String) -> XPathObject
-    func at_css(_ selector: String, namespaces: [String:String]?) -> XMLElement?
-    func at_css(_ selector: String) -> XMLElement?
+    func css(_ selector: String, namespaces: [String: String]?) -> XPathObject
+}
+
+public extension Searchable {
+    func xpath(_ xpath: String, namespaces: [String: String]? = nil) -> XPathObject {
+        self.xpath(xpath, namespaces: namespaces)
+    }
+
+    func at_xpath(_ xpath: String, namespaces: [String: String]? = nil) -> XMLElement? {
+        self.xpath(xpath, namespaces: namespaces).nodeSetValue.first
+    }
+
+    func css(_ selector: String, namespaces: [String: String]? = nil) -> XPathObject {
+        self.css(selector, namespaces: namespaces)
+    }
+
+    func at_css(_ selector: String, namespaces: [String: String]? = nil) -> XMLElement? {
+        self.css(selector, namespaces: namespaces).nodeSetValue.first
+    }
 }
 
 /**
@@ -160,12 +151,12 @@ SearchableNode
 */
 public protocol SearchableNode: Searchable {
     var text: String? { get }
-    var toHTML:      String? { get }
-    var toXML:     String? { get }
+    var toHTML: String? { get }
+    var toXML: String? { get }
     var innerHTML: String? { get }
     var className: String? { get }
-    var tagName:   String? { get set }
-    var content:   String? { get set }
+    var tagName: String? { get set }
+    var content: String? { get set }
 }
 
 /**
@@ -185,7 +176,8 @@ public protocol XMLElement: SearchableNode {
 /**
 XMLDocument
 */
-public protocol XMLDocument: class, SearchableNode {
+public protocol XMLDocument: AnyObject, SearchableNode {
+    var namespaces: [Namespace] { get }
 }
 
 /**
@@ -201,8 +193,8 @@ public protocol HTMLDocument: XMLDocument {
 XMLNodeSet
 */
 public final class XMLNodeSet {
-    fileprivate var nodes: [XMLElement] = []
-    
+    private var nodes: [XMLElement]
+
     public var toHTML: String? {
         let html = nodes.reduce("") {
             if let text = $1.toHTML {
@@ -212,7 +204,7 @@ public final class XMLNodeSet {
         }
         return html.isEmpty == false ? html : nil
     }
-    
+
     public var innerHTML: String? {
         let html = nodes.reduce("") {
             if let text = $1.innerHTML {
@@ -222,7 +214,7 @@ public final class XMLNodeSet {
         }
         return html.isEmpty == false ? html : nil
     }
-    
+
     public var text: String? {
         let html = nodes.reduce("") {
             if let text = $1.text {
@@ -232,33 +224,23 @@ public final class XMLNodeSet {
         }
         return html
     }
-    
+
     public subscript(index: Int) -> XMLElement {
-        return nodes[index]
+        nodes[index]
     }
-    
-    public var count: Int {
-        return nodes.count
-    }
-    
-    internal init() {
-    }
-    
-    internal init(nodes: [XMLElement]) {
+
+    public var count: Int { nodes.count }
+
+    init(nodes: [XMLElement] = []) {
         self.nodes = nodes
     }
-    
+
     public func at(_ index: Int) -> XMLElement? {
-        return count > index ? nodes[index] : nil
+        count > index ? nodes[index] : nil
     }
-    
-    public var first: XMLElement? {
-        return at(0)
-    }
-    
-    public var last: XMLElement? {
-        return at(count-1)
-    }
+
+    public var first: XMLElement? { at(0) }
+    public var last: XMLElement? { at(count - 1) }
 }
 
 extension XMLNodeSet: Sequence {
@@ -277,9 +259,16 @@ extension XMLNodeSet: Sequence {
 }
 
 /**
+ Namespace
+ */
+public struct Namespace {
+    public let prefix: String
+    public let name: String
+}
+
+/**
 XPathObject
 */
-
 public enum XPathObject {
     case none
     case NodeSet(nodeset: XMLNodeSet)
@@ -289,19 +278,18 @@ public enum XPathObject {
 }
 
 extension XPathObject {
-    internal init(document: XMLDocument?, docPtr: xmlDocPtr, object: xmlXPathObject) {
+    init(document: XMLDocument?, docPtr: xmlDocPtr, object: xmlXPathObject) {
         switch object.type {
         case XPATH_NODESET:
-            let nodeSet = object.nodesetval
-            if nodeSet == nil || nodeSet?.pointee.nodeNr == 0 || nodeSet?.pointee.nodeTab == nil {
+            guard let nodeSet = object.nodesetval, nodeSet.pointee.nodeNr != 0, let nodeTab = nodeSet.pointee.nodeTab else {
                 self = .none
                 return
             }
 
-            var nodes : [XMLElement] = []
-            let size = Int((nodeSet?.pointee.nodeNr)!)
+            var nodes: [XMLElement] = []
+            let size = Int(nodeSet.pointee.nodeNr)
             for i in 0 ..< size {
-                let node: xmlNodePtr = nodeSet!.pointee.nodeTab[i]!
+                let node: xmlNodePtr = nodeTab[i]!
                 let htmlNode = libxmlHTMLNode(document: document, docPtr: docPtr, node: node)
                 nodes.append(htmlNode)
             }
@@ -326,18 +314,15 @@ extension XPathObject {
     }
 
     public subscript(index: Int) -> XMLElement {
-        return nodeSet![index]
+        nodeSet![index]
     }
 
     public var first: XMLElement? {
-        return nodeSet?.first
+        nodeSet?.first
     }
 
     public var count: Int {
-        guard let nodeset = nodeSet else {
-            return 0
-        }
-        return nodeset.count
+        nodeSet?.count ?? 0
     }
 
     var nodeSet: XMLNodeSet? {
@@ -353,35 +338,35 @@ extension XPathObject {
         }
         return nil
     }
-    
+
     var number: Double? {
         if case let .Number(value) = self {
             return value
         }
         return nil
     }
-    
+
     var string: Swift.String? {
         if case let .String(value) = self {
             return value
         }
         return nil
     }
-    
+
     var nodeSetValue: XMLNodeSet {
-        return nodeSet ?? XMLNodeSet()
+        nodeSet ?? XMLNodeSet()
     }
-    
+
     var boolValue: Swift.Bool {
-        return bool ?? false
+        bool ?? false
     }
-    
+
     var numberValue: Double {
-        return number ?? 0.0
+        number ?? 0
     }
-    
+
     var stringValue: Swift.String {
-        return string ?? ""
+        string ?? ""
     }
 }
 
