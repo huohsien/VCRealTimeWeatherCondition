@@ -18,6 +18,38 @@
             endingLineNumber = "240"
             landmarkName = "fetchAndUpdateData2()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6F0F23F3-2B0A-4C73-88D7-AE3DFD6A0118 - f753015bad092d02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in VCRealTimeWeatherCondition.ViewController.fetchAndUpdateData2() -&gt; ()"
+                  moduleName = "VCRealTimeWeatherCondition"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huohsien/Developer/VCRealTimeWeatherCondition/VCRealTimeWeatherCondition/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "241"
+                  endingLineNumber = "241"
+                  offsetFromSymbolStart = "468">
+               </Location>
+               <Location
+                  uuid = "6F0F23F3-2B0A-4C73-88D7-AE3DFD6A0118 - f753015bad092d02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in VCRealTimeWeatherCondition.ViewController.fetchAndUpdateData2() -&gt; ()"
+                  moduleName = "VCRealTimeWeatherCondition"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huohsien/Developer/VCRealTimeWeatherCondition/VCRealTimeWeatherCondition/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "241"
+                  endingLineNumber = "241"
+                  offsetFromSymbolStart = "448">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -34,6 +66,38 @@
             endingLineNumber = "237"
             landmarkName = "fetchAndUpdateData2()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "649007EB-2E85-44FA-941F-0745F63AFA61 - f753015bad092c86"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in VCRealTimeWeatherCondition.ViewController.fetchAndUpdateData2() -&gt; ()"
+                  moduleName = "VCRealTimeWeatherCondition"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huohsien/Developer/VCRealTimeWeatherCondition/VCRealTimeWeatherCondition/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "237"
+                  endingLineNumber = "237"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  uuid = "649007EB-2E85-44FA-941F-0745F63AFA61 - f753015bad092c86"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in VCRealTimeWeatherCondition.ViewController.fetchAndUpdateData2() -&gt; ()"
+                  moduleName = "VCRealTimeWeatherCondition"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huohsien/Developer/VCRealTimeWeatherCondition/VCRealTimeWeatherCondition/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "237"
+                  endingLineNumber = "237"
+                  offsetFromSymbolStart = "244">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -50,52 +114,36 @@
             endingLineNumber = "166"
             landmarkName = "fetchAndUpdateData()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "252327EB-2C14-4BCD-8C02-09A1CA8B1D03"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VCRealTimeWeatherCondition/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
-            landmarkName = "parseHtml()"
-            landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "252327EB-2C14-4BCD-8C02-09A1CA8B1D03 - 3d9a633bfaab6a49"
+                  uuid = "C64405B3-C67B-403C-8514-2E05CB3D5DC9 - 74ab1f5d18f2e4a9"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in VCRealTimeWeatherCondition.ViewController.parseHtml() -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in VCRealTimeWeatherCondition.ViewController.fetchAndUpdateData() -&gt; ()"
                   moduleName = "VCRealTimeWeatherCondition"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/huohsien/Developer/VCRealTimeWeatherCondition/VCRealTimeWeatherCondition/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "118"
-                  endingLineNumber = "118"
-                  offsetFromSymbolStart = "1968">
+                  startingLineNumber = "166"
+                  endingLineNumber = "166"
+                  offsetFromSymbolStart = "328">
                </Location>
                <Location
-                  uuid = "252327EB-2C14-4BCD-8C02-09A1CA8B1D03 - 3d9a633bfaab6a49"
+                  uuid = "C64405B3-C67B-403C-8514-2E05CB3D5DC9 - 74ab1f5d18f2e4a9"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in VCRealTimeWeatherCondition.ViewController.parseHtml() -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in VCRealTimeWeatherCondition.ViewController.fetchAndUpdateData() -&gt; ()"
                   moduleName = "VCRealTimeWeatherCondition"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/huohsien/Developer/VCRealTimeWeatherCondition/VCRealTimeWeatherCondition/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "118"
-                  endingLineNumber = "118"
-                  offsetFromSymbolStart = "2100">
+                  startingLineNumber = "166"
+                  endingLineNumber = "166"
+                  offsetFromSymbolStart = "308">
                </Location>
             </Locations>
          </BreakpointContent>

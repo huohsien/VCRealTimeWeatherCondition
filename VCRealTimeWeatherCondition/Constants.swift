@@ -12,7 +12,7 @@ struct Constants {
     
 //    static let baseUrl = "https://www.cwb.gov.tw/V7/observe/real/46692.htm?"
 //    static let baseUrl = "https://www.cwb.gov.tw/V8/C/W/OBS_County.html?ID=63"
-    static let baseUrl = "https://www.cwb.gov.tw/V8/C/W/OBS_County.html?ID=63#"
+    static let baseUrl = "https://www.cwa.gov.tw/V8/C/W/OBS_County.html?ID=63#"
 
     static let baseUrl2 = "https://www.cwb.gov.tw/V7/observe/rainfall/A136.htm"
 
